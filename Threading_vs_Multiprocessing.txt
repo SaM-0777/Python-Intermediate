@@ -1,0 +1,64 @@
+# contents :
+# Difference between Processor and Thread
+# Advantages and Disadvantages of both
+# How and Why Threads are limited by GIL
+# How to use built-in threading and multiprocessing module
+
+
+
+
+# Process : An instance of an Program i.e. Chrome or Python Interpreter
+
+# Take advantage of multiple CPU and Cores
+# Separete memory space -> Memory is not shared by Processes
+# Great for CPU - bound processing
+# New Process is startesd independently from each other
+# Processes are interuptable/killable
+# One GIL for each Process -> avoids GIL limitation
+# 
+# Disadvantages :
+# HeavyWeight-
+# Starting a Processs is slower then starting a Thread
+# More memory
+# IPC (inter- Process communication) is more complex
+
+
+
+
+
+
+# Threads : An entity wiyhin a process that can be scheduled {also known as "light weight process"}
+# A process can spawn multiple threads
+
+# All threads within a process share the same memory
+# Light Weight
+# Starting a thread is faster then starting a process
+# Great for I/O-bound tasks
+
+# Threading is limited by GIL : Only one thread at a time
+# No effect for CPU-bound tasks
+# Not interruptable/killable
+# Careful with race condition (memory leak)
+
+
+
+
+
+
+
+
+# GIL : Global interpreter lock
+# A lock that allows only one thread at a time to execute in python
+# Needed in CPython because memory management is not thread safe
+
+# Avoid :
+# Use Multiprocessing
+# Use a different, free-threaded Python implementation (Jython, IronPython)
+# Use Python as a wrapper for third-party libraries (C/C++) -> numpy, scipy
+
+
+
+
+
+
+

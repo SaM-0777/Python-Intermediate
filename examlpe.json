@@ -1,0 +1,17 @@
+{
+    "firstname": "Soumyaranjan",
+    "lastname": "Sahu",
+    "hobbies": ["running", "videogames", "coding"],
+    "age": 20,
+    "married status": "No",
+    "brothers": [
+        {
+            "name": "Rahul Sahu",
+            "age": 18
+        },
+        {
+            "name": "Abhisek Sahu",
+            "age": 18
+        }
+    ]
+}
